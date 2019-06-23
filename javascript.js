@@ -16,18 +16,18 @@ function checkGuess(){
 
     if (userGuess === randomNumber) {
         lastResult.textContent = "Congratulation! You got it right!";
-        lastResult.style.backgroundColor = "green";
+        lastResult.style.backgroundColor = "lightgreen";
         lowOrHi.textContent = " ";
         setGameOver();
 
     } else if (count === 10) {
         lastResult.textContent = "!Game Over!";
-        lastResult.style.backgroundColor = "red";
+        lastResult.style.backgroundColor = "pink";
         lowOrHi.textContent = " ";
         setGameOver();
     } else {
         lastResult.textContent = "Wrong";
-        lastResult.style.backgroundColor = "red";
+        lastResult.style.backgroundColor = "pink";
         (userGuess < randomNumber) ? lowOrHi.textContent="Your guess is too low" : lowOrHi.textContent="Your guess is too high";
     }
     
